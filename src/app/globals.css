@@ -26,15 +26,15 @@ body {
   }
 
   .btn {
-    @apply bg-accent-800 dark:bg-dark-300 !important;
+    @apply bg-accent-800 dark:bg-dark-300  ;
   }
 
   .btn-secondary {
-    @apply bg-accent-800 dark:bg-dark-400 !important;
+    @apply bg-accent-800 dark:bg-dark-400  ;
   }
 
   .btn-tertiary {
-    @apply bg-light-700 dark:bg-dark-300 !important;
+    @apply bg-light-700 dark:bg-dark-300  ;
   }
 
   .markdown {
@@ -42,25 +42,25 @@ body {
   }
 
   .primary-gradient {
-    background: var(--Accent-Gradient, linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%));
+    background: linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%);
   }
 
   .dark-gradient {
-    background: var(--Dark-gradient, linear-gradient(267deg, rgba(23, 28, 35, 0.41) 10.27%, rgba(19, 22, 28, 0.70) 88.57%));
+    background: linear-gradient(267deg, rgba(23, 28, 35, 0.41) 10.27%, rgba(19, 22, 28, 0.70) 88.57%);
   }
 
   .tab {
-    @apply min-h-full dark:bg-dark-400 bg-accent-800 text-light-500 dark:data-[state=active]:bg-dark-300 data-[state=active]:bg-primary-100 data-[state=active]:text-primary-500 !important;
+    @apply min-h-full dark:bg-dark-400 bg-accent-800 text-light-500 dark:data-[state=active]:bg-dark-300 data-[state=active]:bg-primary-100 data-[state=active]:text-primary-500  ;
   }
 }
 
 .no-focus {
-  @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+  @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0  ;
 }
 
 .active-theme {
   filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
-    brightness(104%) contrast(106%) !important;
+    brightness(104%) contrast(106%)  ;
 }
 
 .light-gradient {
@@ -72,7 +72,7 @@ body {
 }
 
 .primary-text-gradient {
-  background: var(--Accent-Gradient, linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%));
+  background: linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,7 +117,7 @@ code {
   hyphens: auto;
 
   padding: 2px;
-  color: #0048FF !important;
+  color: #0048FF  ;
 }
 
 .markdown pre {
@@ -130,13 +130,13 @@ code {
   display: block;
   overflow-x: auto;
 
-  color: inherit !important;
+  color: inherit  ;
 }
 /* Markdown End */
 
 /* Clerk */
 .cl-internal-b3fm6y {
-  background: var(--Accent-Gradient, linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%)) !important;
+  background: var(--Accent-Gradient, linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%))  ;
 }
 
 .hash-span {
