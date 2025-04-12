@@ -4,12 +4,19 @@ import TaskCard from "@/components/shared/cards/TaskCard";
 import type { Metadata } from "next";
 import LocalSearchbar from "@/components/shared/search/LocalSearchbar";
 
+interface Task {
+  _id: string;
+  title: string;
+  description: string;
+  createdAt: Date;
+}
+
 export const metadata: Metadata = {
   title: "Home — Ell-ena",
 };
 
 export default async function Home() {
-  const tasks = [
+  const tasks: Task[] = [
     {
       _id: "1",
       title: "Create a Lang-Chain Pipeline",
@@ -76,10 +83,9 @@ export default async function Home() {
         />
       </div>
 
-
       <div className="mt-10 flex w-full flex-col gap-6">
         {tasks.length > 0 &&
-          tasks.map((task: any) => (
+          tasks.map((task: Task) => (
             <TaskCard
               key={task._id}
               _id={task._id}
