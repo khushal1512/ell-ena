@@ -1,5 +1,4 @@
 @import url("../styles/theme.css");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -145,7 +144,7 @@ code {
 
 /* Clerk */
 .cl-internal-b3fm6y {
-  background: linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%) !important;
+  background: linear-gradient(93deg, #0048FF -13.95%, #2F8EF1 42.79%, #45B3DB 99.54%);
 }
 
 .hash-span {
@@ -174,4 +173,4 @@ code {
   body {
     @apply bg-white text-black;
   }
-} 
+}

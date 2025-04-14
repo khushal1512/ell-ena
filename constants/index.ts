@@ -29,7 +29,7 @@ export const sidebarLinks: SidebarLink[] = [
   },
   {
     imgURL: "/assets/icons/question.svg",
-    route: "/",
+    route: "/ask-ellena",
     label: "Ask Ell-ena",
   },
 ];
