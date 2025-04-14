@@ -14,6 +14,7 @@ Ell-ena is an AI-powered productivity platform that integrates conversational un
 - Next.js
 - FastAPI
 - LangChain
+- Socket.IO
 - HuggingFace
 - Neo4j
 - MongoDB
