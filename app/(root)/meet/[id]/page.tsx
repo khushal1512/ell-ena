@@ -5,14 +5,7 @@ export const metadata: Metadata = {
   title: 'Meeting Chat — Ell-ena',
 };
 
-interface MeetingChatProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function MeetingChat({ params }: MeetingChatProps) {
-  const { id } = params;
+export default function MeetingChat() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh]">
