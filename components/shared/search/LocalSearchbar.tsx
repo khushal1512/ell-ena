@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
+import { useState } from "react";
 
 interface CustomInputProps {
   route?: string;
@@ -18,6 +19,8 @@ const LocalSearchbar = ({
   placeholder,
   otherClasses,
 }: CustomInputProps) => {
+
+  const [search, setSearch] = useState("");
   return (
     <div
       className={`background-light800_darkgradient flex min-h-[56px] grow  items-center gap-4 rounded-[10px] px-4 ${otherClasses} ${
@@ -35,7 +38,8 @@ const LocalSearchbar = ({
       <Input
         type="text"
         placeholder={placeholder}
-        value={'defaultValue'}
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
         className="text-dark400_light700 paragraph-regular no-focus placeholder text-dark400_light700 border-none bg-transparent shadow-none outline-none"
       />
     </div>
