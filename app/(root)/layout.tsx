@@ -1,4 +1,5 @@
 import LeftSidebar from "@/components/shared/LeftSidebar";
+import MeetingsTodaySideBar from "@/components/shared/MeetingsTodaySideBar";
 import Navbar from "@/components/shared/navbar/Navbar";
 import React from "react";
 
@@ -14,7 +15,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
         </section>
 
-        {/* MeetingsTodaySideBar */}
+        <MeetingsTodaySideBar />
      </div>
      {/* Toaster */}
     </main>

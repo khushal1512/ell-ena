@@ -75,7 +75,7 @@ const Mobile = () => {
           />
 
           <p className="h2-bold text-dark100_light900 font-spaceGrotesk">
-            <span className="text-primary-500">Ell-ena</span>
+            <span className="text-light900_dark_primary">Ell-ena</span>
           </p>
         </Link>
         <div>

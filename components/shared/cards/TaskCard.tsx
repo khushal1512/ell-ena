@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import Metric from "@/components/shared/Metric";
-import { useTheme } from "@/context/ThemeProvider";
-
 
 interface TaskProps {
   _id: string;
