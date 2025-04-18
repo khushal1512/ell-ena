@@ -14,7 +14,7 @@ interface TaskProps {
 const TaskCard = ({ _id, title, description, createdAt }: TaskProps) => {
   return (
     <div className={`card-wrapper rounded-[10px]`}>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-4 p-6">
 
         {/* Left Content */}
         <div className="flex flex-col justify-between w-full">
