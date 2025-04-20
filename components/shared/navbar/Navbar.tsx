@@ -16,7 +16,7 @@ const Navbar = () => {
         />
 
         <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-          <span className="text-primary-500">Ell-ena</span>
+          <span className="text-light900_dark_primary">Ell-ena</span>
         </p>
       </Link>
 

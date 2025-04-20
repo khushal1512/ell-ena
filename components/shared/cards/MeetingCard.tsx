@@ -2,18 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import Metric from "@/components/shared/Metric";
 
-interface TaskProps {
+interface MeetingProps {
   _id: string;
   title: string;
-  description: string;
   createdAt?: Date;
 }
 
-const TaskCard = ({ _id, title, description, createdAt }: TaskProps) => {
+const MeetingCard = ({ _id, title, createdAt }: MeetingProps) => {
   return (
     <div className={`card-wrapper rounded-[10px]`}>
       <div className="flex flex-row gap-4 p-6">
-
         {/* Left Content */}
         <div className="flex flex-col justify-between w-full">
           <div className="flex flex-col sm:flex-row items-start justify-between gap-5">
@@ -22,14 +20,7 @@ const TaskCard = ({ _id, title, description, createdAt }: TaskProps) => {
                 {title}
               </h3>
             </div>
-            <span className="bg-dark-700 text-xs text-light-500 font-medium px-2 py-1 rounded-md self-start">
-              DEVELOPMENT
-            </span>
           </div>
-
-          <p className="body-regular text-dark200_light900 mt-3.5 line-clamp-3">
-            {description.slice(0, 2000)}
-          </p>
 
           {/* Footer */}
           <div className="flex-between mt-6 w-full flex-wrap gap-3">
@@ -37,18 +28,16 @@ const TaskCard = ({ _id, title, description, createdAt }: TaskProps) => {
               <Metric
                 imgUrl="/assets/icons/clock.svg"
                 alt="clock"
-                value="4hrs left"
+                value="Active now"
                 textStyles="small-medium text-light-500"
               />
             </div>
 
             <Link
-              href={`/task/${_id}`}
+              href={`/meet/${_id}`}
               className="flex items-center gap-2"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              <p className="body-semibold primary-text-gradient">View task</p>
+              <p className="body-semibold primary-text-gradient">Open meeting</p>
               <Image
                 alt="arrow up right"
                 width={20}
@@ -63,4 +52,4 @@ const TaskCard = ({ _id, title, description, createdAt }: TaskProps) => {
   );
 };
 
-export default TaskCard;
+export default MeetingCard; 
