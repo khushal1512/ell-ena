@@ -70,7 +70,7 @@ const MeetingsTodaySideBar = () => {
             <h3 className="h3-bold text-dark200_light900"> Upcoming Meetings</h3>
             <div className='mt-7 flex w-full flex-col gap-[30px]'>
                 {UpcomingMeetings.map((meet) => (
-                    <div className="flex cursor-pointer items-center justify-between gap-7">
+                    <div key={meet._id} className="flex cursor-pointer items-center justify-between gap-7">
                         <p className="body-medium text-dark500_light700">{meet.title}</p>
                         <Image
                             src="/assets/icons/chevron-right.svg"
