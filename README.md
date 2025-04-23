@@ -38,7 +38,8 @@ Ell-ena is an AI-powered productivity platform that integrates conversational un
 4.  **Graph RAG Integration**
 
 *   Implements Graph Retrieval Augmented Generation for context retrieval.
-
+## Figma Design Link
+[Figma Link](https://www.figma.com/design/Q5k0Auk3AUC1201OUBmrFO/Ell-ena?m=auto&t=h5L2DKoYe3pp05KG-1)
 ## System Architecture Overview
 <div align="center">
   <span>
